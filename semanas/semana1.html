@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 1: Introducción a la Minería de Datos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/semana-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-database"></i>
+                    <span>Minería de Datos</span>
+                </a>
+            </div>
+            <div class="week-indicator">
+                <span class="week-badge">Semana 1</span>
+            </div>
+            <div class="nav-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 7.14%"></div>
+                </div>
+                <span>7.14% Completado</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero de la Semana -->
+    <section class="week-hero">
+        <div class="hero-background">
+            <canvas id="weekCanvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="week-header">
+                <div class="week-breadcrumb">
+                    <a href="../index.html"><i class="fas fa-home"></i> Inicio</a>
+                    <span>/</span>
+                    <span>Semana 1</span>
+                </div>
+                <h1 class="week-title">
+                    <span class="week-number">01</span>
+                    Introducción a la Minería de Datos
+                </h1>
+                <p class="week-description">
+                    Descubre los conceptos fundamentales de la minería de datos, su importancia en el mundo actual
+                    y las aplicaciones que están transformando industrias enteras.
+                </p>
+                <div class="week-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>4-6 horas</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-signal"></i>
+                        <span>Nivel Principiante</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-code"></i>
+                        <span>Python + Google Colab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="week-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Sidebar de Navegación -->
+                <aside class="content-sidebar">
+                    <div class="sidebar-content">
+                        <h3>Contenido de la Semana</h3>
+                        <nav class="topic-nav">
+                            <a href="#introduccion" class="topic-link active">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Introducción</span>
+                            </a>
+                            <a href="#conceptos-clave" class="topic-link">
+                                <i class="fas fa-key"></i>
+                                <span>Conceptos Clave</span>
+                            </a>
+                            <a href="#datos-informacion-conocimiento" class="topic-link">
+                                <i class="fas fa-layer-group"></i>
+                                <span>Datos → Información → Conocimiento</span>
+                            </a>
+                            <a href="#tipos-problemas" class="topic-link">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>Tipos de Problemas</span>
+                            </a>
+                            <a href="#aplicaciones" class="topic-link">
+                                <i class="fas fa-rocket"></i>
+                                <span>Aplicaciones Prácticas</span>
+                            </a>
+                            <a href="#entorno-trabajo" class="topic-link">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Entorno de Trabajo</span>
+                            </a>
+                            <a href="#actividad-practica" class="topic-link">
+                                <i class="fas fa-tasks"></i>
+                                <span>Actividad Práctica</span>
+                            </a>
+                            <a href="#evaluacion" class="topic-link">
+                                <i class="fas fa-clipboard-check"></i>
+                                <span>Evaluación</span>
+                            </a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- Contenido Principal -->
+                <div class="main-content">
+                    <!-- Sección: Introducción -->
+                    <section id="introduccion" class="content-section">
+                        <div class="section-header">
+                            <h2>Introducción a la Minería de Datos</h2>
+                            <div class="section-actions">
+                                <button class="btn btn-sm btn-secondary" onclick="toggleVideo(this)">
+                                    <i class="fas fa-video"></i> Ver Video
+                                </button>
+                                <button class="btn btn-sm btn-secondary">
+                                    <i class="fas fa-download"></i> Descargar PDF
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="video-container" style="display: none;">
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                                <p>Video de introducción a la minería de datos</p>
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <p>
+                                La <strong>minería de datos</strong> es el proceso de descubrir patrones, conocimientos
+                                e información valiosa a partir de grandes conjuntos de datos utilizando métodos
+                                estadísticos, matemáticos y de aprendizaje automático.
+                            </p>
+
+                            <blockquote class="highlight-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>La minería de datos es la convergencia de múltiples disciplinas: estadística,
+                                   inteligencia artificial, bases de datos y visualización.</p>
+                                <cite>- Usama Fayyad, pionero en minería de datos</cite>
+                            </blockquote>
+
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fas fa-magnifying-glass"></i>
+                                    </div>
+                                    <h4>Descubrimiento</h4>
+                                    <p>Encontrar patrones ocultos y relaciones no evidentes en los datos</p>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h4>Predicción</h4>
+                                    <p>Predecir tendencias futuras basadas en datos históricos</p>
+                                </div>
+                                <div class="info-card">
+                                    <div class="info-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <h4>Conocimiento</h4>
+                                    <p>Transformar datos crudos en conocimiento accionable</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Conceptos Clave -->
+                    <section id="conceptos-clave" class="content-section">
+                        <div class="section-header">
+                            <h2>Conceptos Clave</h2>
+                        </div>
+
+                        <div class="concept-grid">
+                            <div class="concept-card" data-animate="fade-in-up">
+                                <div class="concept-header">
+                                    <i class="fas fa-database"></i>
+                                    <h3>Datos</h3>
+                                </div>
+                                <div class="concept-content">
+                                    <p>Hechos brutos, números, texto, imágenes, que por sí solos no tienen significado específico.</p>
+                                    <div class="example">
+                                        <strong>Ejemplo:</strong> "25", "Madrid", "Verde"
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="concept-card" data-animate="fade-in-up" data-delay="100">
+                                <div class="concept-header">
+                                    <i class="fas fa-info-circle"></i>
+                                    <h3>Información</h3>
+                                </div>
+                                <div class="concept-content">
+                                    <p>Datos organizados y contextualizados que responden a preguntas básicas como qué, quién, cuándo, dónde.</p>
+                                    <div class="example">
+                                        <strong>Ejemplo:</strong> "El cliente tiene 25 años y vive en Madrid"
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="concept-card" data-animate="fade-in-up" data-delay="200">
+                                <div class="concept-header">
+                                    <i class="fas fa-brain"></i>
+                                    <h3>Conocimiento</h3>
+                                </div>
+                                <div class="concept-content">
+                                    <p>Información analizada y comprendida que permite tomar decisiones y hacer predicciones.</p>
+                                    <div class="example">
+                                        <strong>Ejemplo:</strong> "Los clientes de 25 años en Madrid prefieren productos ecológicos"
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="interactive-diagram">
+                            <h4>Proceso de Transformación de Datos</h4>
+                            <div class="process-flow">
+                                <div class="process-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <h5>Datos Crudos</h5>
+                                    <p>Información sin procesar</p>
+                                </div>
+                                <div class="process-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <h5>Procesamiento</h5>
+                                    <p>Limpieza y organización</p>
+                                </div>
+                                <div class="process-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-chart-bar"></i>
+                                    </div>
+                                    <h5>Análisis</h5>
+                                    <p>Descubrimiento de patrones</p>
+                                </div>
+                                <div class="process-arrow">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <h5>Conocimiento</h5>
+                                    <p>Insights accionables</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Tipos de Problemas -->
+                    <section id="tipos-problemas" class="content-section">
+                        <div class="section-header">
+                            <h2>Tipos de Problemas en Minería de Datos</h2>
+                        </div>
+
+                        <div class="problem-types">
+                            <div class="problem-card supervised">
+                                <div class="problem-header">
+                                    <h3><i class="fas fa-graduation-cap"></i> Aprendizaje Supervisado</h3>
+                                    <span class="difficulty-badge beginner">Principiante</span>
+                                </div>
+                                <div class="problem-content">
+                                    <p>El modelo aprende a partir de datos etiquetados, donde se conoce la respuesta correcta.</p>
+
+                                    <div class="subtypes">
+                                        <div class="subtype">
+                                            <h4><i class="fas fa-tags"></i> Clasificación</h4>
+                                            <p>Predecir categorías discretas</p>
+                                            <ul>
+                                                <li>Detección de spam</li>
+                                                <li>Diagnóstico médico</li>
+                                                <li>Reconocimiento de imágenes</li>
+                                            </ul>
+                                        </div>
+                                        <div class="subtype">
+                                            <h4><i class="fas fa-chart-line"></i> Regresión</h4>
+                                            <p>Predecir valores continuos</p>
+                                            <ul>
+                                                <li>Predicción de precios</li>
+                                                <li>Pronóstico de ventas</li>
+                                                <li>Estimación de demanda</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="problem-card unsupervised">
+                                <div class="problem-header">
+                                    <h3><i class="fas fa-search"></i> Aprendizaje No Supervisado</h3>
+                                    <span class="difficulty-badge intermediate">Intermedio</span>
+                                </div>
+                                <div class="problem-content">
+                                    <p>El modelo encuentra patrones en datos sin etiquetas previas.</p>
+
+                                    <div class="subtypes">
+                                        <div class="subtype">
+                                            <h4><i class="fas fa-object-group"></i> Agrupamiento (Clustering)</h4>
+                                            <p>Agrupar datos similares</p>
+                                            <ul>
+                                                <li>Segmentación de clientes</li>
+                                                <li>Detección de anomalías</li>
+                                                <li>Análisis de comunidades</li>
+                                            </ul>
+                                        </div>
+                                        <div class="subtype">
+                                            <h4><i class="fas fa-compress"></i> Reducción de Dimensionalidad</h4>
+                                            <p>Simplificar datos complejos</p>
+                                            <ul>
+                                                <li>Visualización de datos</li>
+                                                <li>Extracción de características</li>
+                                                <li>Compresión de información</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comparison-table">
+                            <h4>Comparación de Tipos de Aprendizaje</h4>
+                            <table class="comparison">
+                                <thead>
+                                    <tr>
+                                        <th>Característica</th>
+                                        <th>Supervisado</th>
+                                        <th>No Supervisado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Datos de entrenamiento</td>
+                                        <td>Etiquetados</td>
+                                        <td>Sin etiquetar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Objetivo</td>
+                                        <td>Predecir salida conocida</td>
+                                        <td>Descubrir patrones ocultos</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Complejidad</td>
+                                        <td>Menor complejidad inicial</td>
+                                        <td>Mayor complejidad interpretativa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aplicaciones</td>
+                                        <td>Clasificación, regresión</td>
+                                        <td>Clustering, reducción dimensional</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Aplicaciones -->
+                    <section id="aplicaciones" class="content-section">
+                        <div class="section-header">
+                            <h2>Aplicaciones Prácticas</h2>
+                        </div>
+
+                        <div class="applications-grid">
+                            <div class="application-card">
+                                <div class="app-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <h3>Comercio Electrónico</h3>
+                                <ul>
+                                    <li>Sistemas de recomendación</li>
+                                    <li>Análisis del comportamiento del cliente</li>
+                                    <li>Predicción de ventas</li>
+                                    <li>Detección de fraude</li>
+                                </ul>
+                                <div class="case-study">
+                                    <strong>Caso:</strong> Amazon recomienda productos basados en historial de compras y navegación.
+                                </div>
+                            </div>
+
+                            <div class="application-card">
+                                <div class="app-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <h3>Salud</h3>
+                                <ul>
+                                    <li>Diagnóstico médico asistido</li>
+                                    <li>Descubrimiento de medicamentos</li>
+                                    <li>Predicción de enfermedades</li>
+                                    <li>Medicina personalizada</li>
+                                </ul>
+                                <div class="case-study">
+                                    <strong>Caso:</strong> IBM Watson ayuda a diagnosticar cáncer analizando miles de estudios médicos.
+                                </div>
+                            </div>
+
+                            <div class="application-card">
+                                <div class="app-icon">
+                                    <i class="fas fa-piggy-bank"></i>
+                                </div>
+                                <h3>Finanzas</h3>
+                                <ul>
+                                    <li>Evaluación de riesgos crediticios</li>
+                                    <li>Detección de transacciones fraudulentas</li>
+                                    <li>Trading algorítmico</li>
+                                    <li>Análisis de inversión</li>
+                                </ul>
+                                <div class="case-study">
+                                    <strong>Caso:</strong> Bancos usan ML para aprobar créditos en segundos con bajo riesgo de impago.
+                                </div>
+                            </div>
+
+                            <div class="application-card">
+                                <div class="app-icon">
+                                    <i class="fas fa-industry"></i>
+                                </div>
+                                <h3>Industria</h3>
+                                <ul>
+                                    <li>Mantenimiento predictivo</li>
+                                    <li>Optimización de procesos</li>
+                                    <li>Control de calidad</li>
+                                    <li>Gestión de la cadena de suministro</li>
+                                </ul>
+                                <div class="case-study">
+                                    <strong>Caso:</strong> Fábricas usan sensores + IA para prevenir fallos en maquinaria.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="impact-stats">
+                            <h3>Impacto de la Minería de Datos</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-count="85">0</div>
+                                    <div class="stat-label">% de empresas que usarán IA en 2025</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-count="2.5" data-suffix="B">0</div>
+                                    <div class="stat-label">Datos generados diariamente (GB)</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-count="15" data-suffix="T">0</div>
+                                    <div class="stat-label">Valor del mercado global (billones USD)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Entorno de Trabajo -->
+                    <section id="entorno-trabajo" class="content-section">
+                        <div class="section-header">
+                            <h2>Configuración del Entorno de Trabajo</h2>
+                        </div>
+
+                        <div class="setup-guide">
+                            <div class="setup-steps">
+                                <div class="step-card">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Instalar Anaconda</h4>
+                                        <p>Anaconda es una distribución gratuita de Python y R que simplifica la gestión de paquetes.</p>
+                                        <div class="code-block">
+                                            <div class="code-header">
+                                                <span>Paso 1: Descargar Anaconda</span>
+                                                <button class="copy-btn" onclick="copyCode(this)">
+                                                    <i class="fas fa-copy"></i>
+                                                </button>
+                                            </div>
+                                            <pre><code># Visita https://anaconda.com/products/distribution
+# Descarga la versión para tu sistema operativo
+# Sigue el instalador con las opciones por defecto</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Verificar Instalación</h4>
+                                        <p>Comprueba que Anaconda se instaló correctamente.</p>
+                                        <div class="code-block">
+                                            <div class="code-header">
+                                                <span>Verificar en Terminal/CMD</span>
+                                                <button class="copy-btn" onclick="copyCode(this)">
+                                                    <i class="fas fa-copy"></i>
+                                                </button>
+                                            </div>
+                                            <pre><code># Verificar versión de conda
+conda --version
+
+# Verificar versión de Python
+python --version</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Acceder a Google Colab</h4>
+                                        <p>Google Colab es el entorno interactivo en la nube que usaremos durante el curso. No requiere instalación local.</p>
+                                        <div class="code-block">
+                                            <div class="code-header">
+                                                <span>Acceder a Google Colab</span>
+                                                <button class="copy-btn" onclick="copyCode(this)">
+                                                    <i class="fas fa-copy"></i>
+                                                </button>
+                                            </div>
+                                            <pre><code># 1. Abre tu navegador web
+# 2. Visita: https://colab.research.google.com
+# 3. Inicia sesión con tu cuenta de Google
+# 4. Crea un nuevo notebook: File → New notebook
+
+# ✅ Ventajas de Google Colab:
+# - No requiere instalación
+# - Acceso a GPU gratuita
+# - Entorno preconfigurado
+# - Colaboración en tiempo real
+# - Compatible con GitHub</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="step-card">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Crear Primer Notebook en Colab</h4>
+                                        <p>Crea tu primer notebook en Google Colab para probar que todo funciona correctamente.</p>
+                                        <div class="code-block">
+                                            <div class="code-header">
+                                                <span>Primer Notebook en Google Colab</span>
+                                                <button class="copy-btn" onclick="copyCode(this)">
+                                                    <i class="fas fa-copy"></i>
+                                                </button>
+                                            </div>
+                                            <pre><code># Importar librerías básicas (ya preinstaladas en Colab)
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Configuración específica para Google Colab
+%matplotlib inline
+plt.style.use('seaborn-v0_8')
+sns.set_palette("husl")
+
+# Crear datos de ejemplo
+data = {
+    'nombre': ['Ana', 'Juan', 'María', 'Carlos'],
+    'edad': [25, 30, 28, 35],
+    'ciudad': ['Madrid', 'Barcelona', 'Madrid', 'Valencia'],
+    'puntuacion': [85, 92, 78, 88]
+}
+
+# Crear DataFrame
+df = pd.DataFrame(data)
+print("🎉 ¡Primer DataFrame creado exitosamente en Google Colab!")
+print("\n📊 Datos del DataFrame:")
+print(df)
+
+# Estadísticas básicas
+print(f"\n📈 Estadísticas descriptivas:")
+print(df.describe())
+
+# Verificar información del dataset
+print(f"\nℹ️ Información del dataset:")
+print(df.info())</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="installation-checklist">
+                                <h4>✅ Lista de Verificación para Google Colab</h4>
+                                <div class="checklist">
+                                    <label class="checklist-item">
+                                        <input type="checkbox" id="colab-access">
+                                        <span class="checkmark"></span>
+                                        Acceso a Google Colab funcionando
+                                    </label>
+                                    <label class="checklist-item">
+                                        <input type="checkbox" id="colab-notebook">
+                                        <span class="checkmark"></span>
+                                        Nuevo notebook creado en Colab
+                                    </label>
+                                    <label class="checklist-item">
+                                        <input type="checkbox" id="libraries-installed">
+                                        <span class="checkmark"></span>
+                                        Librerías básicas importadas sin errores
+                                    </label>
+                                    <label class="checklist-item">
+                                        <input type="checkbox" id="first-notebook">
+                                        <span class="checkmark"></span>
+                                        Primer código ejecutado exitosamente
+                                    </label>
+                                    <label class="checklist-item">
+                                        <input type="checkbox" id="colab-features">
+                                        <span class="checkmark"></span>
+                                        Funciones de Colab exploradas (GPU, runtime)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Actividad Práctica -->
+                    <section id="actividad-practica" class="content-section">
+                        <div class="section-header">
+                            <h2>Actividad Práctica</h2>
+                            <div class="difficulty-indicator">
+                                <i class="fas fa-signal"></i>
+                                <span>Nivel: Principiante</span>
+                                <span class="time-estimate"><i class="fas fa-clock"></i> 45 minutos</span>
+                            </div>
+                        </div>
+
+                        <div class="activity-container">
+                            <div class="activity-intro">
+                                <h3>🎯 Objetivo</h3>
+                                <p>Explorar un conjunto de datos real y aplicar conceptos básicos de minería de datos
+                                   para descubrir patrones interesantes.</p>
+                            </div>
+
+                            <div class="activity-steps">
+                                <div class="activity-step">
+                                    <div class="step-header">
+                                        <h4>Paso 1: Cargar y Explorar los Datos</h4>
+                                        <span class="step-time">15 min</span>
+                                    </div>
+                                    <div class="step-content">
+                                        <p>Usaremos un dataset de ventas de una tienda online para explorar conceptos básicos. Este código está optimizado para funcionar directamente en Google Colab.</p>
+                                        <div class="code-block">
+                                            <div class="code-header">
+                                                <span>Cargar dataset (Google Colab)</span>
+                                                <button class="copy-btn" onclick="copyCode(this)">
+                                                    <i class="fas fa-copy"></i>
+                                                </button>
+                                            </div>
+                                            <pre><code># Importar librerías
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Configurar para Google Colab
+%matplotlib inline
+plt.style.use('seaborn-v0_8')
+sns.set_palette("husl")
+
+# Cargar datos (usaremos un dataset de ejemplo)
+# Google Colab tiene acceso directo a internet
+url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/retailsales.csv"
+df = pd.read_csv(url)
+
+# Explorar estructura de los datos
+print("📊 Forma del dataset:", df.shape)
+print("\n📋 Primeras filas:")
+print(df.head())
+print("\nℹ️ Información del dataset:")
+print(df.info())
+
+# Mostrar información adicional
+print(f"\n📈 Estadísticas descriptivas:")
+print(df.describe())
+
+# Verificar valores nulos
+print(f"\n⚠️ Valores nulos por columna:")
+print(df.isnull().sum())
+
+# Mostrar tipos de datos
+print(f"\n🏷️ Tipos de datos:")
+print(df.dtypes)</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="activity-step">
+                                    <div class="step-header">
+                                        <h4>Paso 2: Análisis Exploratorio Básico</h4>
+                                        <span class="step-time">15 min</span>
+                                    </div>
+                                    <div class="step-content">
+                                        <p>Realiza un análisis inicial para entender los datos. Este código está optimizado para Google Colab.</p>
+                                        <div class="code-block">
+                                            <div class="code-header">
+                                                <span>Análisis exploratorio (Google Colab)</span>
+                                                <button class="copy-btn" onclick="copyCode(this)">
+                                                    <i class="fas fa-copy"></i>
+                                                </button>
+                                            </div>
+                                            <pre><code># Análisis exploratorio con Google Colab
+print("📊 Estadísticas descriptivas:")
+print(df.describe())
+
+# Verificar valores nulos
+print(f"\n⚠️ Valores nulos por columna:")
+print(df.isnull().sum())
+
+# Tipos de datos
+print(f"\n🏷️ Tipos de datos:")
+print(df.dtypes)
+
+# Análisis adicional específico para Colab
+print(f"\n🔍 Análisis detallado:")
+
+# Dimensiones del dataset
+print(f"Dimensiones: {df.shape[0]} filas × {df.shape[1]} columnas")
+
+# Columnas numéricas vs categóricas
+numeric_cols = df.select_dtypes(include=['int64', 'float64']).columns
+categorical_cols = df.select_dtypes(include=['object']).columns
+print(f"Columnas numéricas: {list(numeric_cols)}")
+print(f"Columnas categóricas: {list(categorical_cols)}")
+
+# Verificar duplicados
+duplicates = df.duplicated().sum()
+print(f"Registros duplicados: {duplicates}")
+
+# Memory usage
+print(f"\n💾 Uso de memoria:")
+print(df.memory_usage(deep=True))</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="activity-step">
+                                    <div class="step-header">
+                                        <h4>Paso 3: Visualización de Datos</h4>
+                                        <span class="step-time">15 min</span>
+                                    </div>
+                                    <div class="step-content">
+                                        <p>Crea visualizaciones básicas para entender patrones. Código optimizado para Google Colab.</p>
+                                        <div class="code-block">
+                                            <div class="code-header">
+                                                <span>Visualizaciones (Google Colab)</span>
+                                                <button class="copy-btn" onclick="copyCode(this)">
+                                                    <i class="fas fa-copy"></i>
+                                                </button>
+                                            </div>
+                                            <pre><code># Configurar estilo de gráficos para Google Colab
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+%matplotlib inline
+plt.style.use('seaborn-v0_8')
+sns.set_palette("husl")
+
+# Ajustar tamaño de fuente para mejor visualización
+plt.rcParams['font.size'] = 12
+plt.rcParams['axes.titlesize'] = 14
+plt.rcParams['axes.labelsize'] = 12
+
+# Verificar columnas disponibles para visualización
+print("📊 Columnas disponibles:")
+print(df.columns.tolist())
+
+# Visualización 1: Gráfico de dispersión (si hay columnas numéricas)
+if 'ventas' in df.columns and 'beneficio' in df.columns:
+    plt.figure(figsize=(12, 6))
+    plt.scatter(df['ventas'], df['beneficio'], alpha=0.7, s=50)
+    plt.title('📈 Relación entre Ventas y Beneficio', fontsize=16)
+    plt.xlabel('Ventas', fontsize=12)
+    plt.ylabel('Beneficio', fontsize=12)
+    plt.grid(True, alpha=0.3)
+    plt.tight_layout()
+    plt.show()
+else:
+    # Visualización alternativa con datos de ejemplo
+    print("\n🔧 Creando visualización con datos de ejemplo...")
+    # Generar datos para demostración
+    np.random.seed(42)
+    x = np.random.normal(50, 15, 100)
+    y = x * 0.8 + np.random.normal(0, 10, 100)
+
+    plt.figure(figsize=(12, 6))
+    plt.scatter(x, y, alpha=0.7, s=50, color='steelblue')
+    plt.title('📈 Ejemplo: Relación entre Dos Variables Numéricas', fontsize=16)
+    plt.xlabel('Variable X', fontsize=12)
+    plt.ylabel('Variable Y', fontsize=12)
+    plt.grid(True, alpha=0.3)
+    plt.tight_layout()
+    plt.show()
+
+# Visualización 2: Histograma
+plt.figure(figsize=(12, 6))
+if 'ventas' in df.columns:
+    plt.hist(df['ventas'], bins=20, alpha=0.7, color='skyblue', edgecolor='black')
+    plt.title('📊 Distribución de Ventas', fontsize=16)
+    plt.xlabel('Ventas', fontsize=12)
+    plt.ylabel('Frecuencia', fontsize=12)
+else:
+    # Histograma con datos de ejemplo
+    plt.hist(np.random.normal(100, 25, 1000), bins=30, alpha=0.7, color='skyblue', edgecolor='black')
+    plt.title('📊 Ejemplo: Distribución Normal', fontsize=16)
+    plt.xlabel('Valor', fontsize=12)
+    plt.ylabel('Frecuencia', fontsize=12)
+
+plt.grid(True, alpha=0.3)
+plt.tight_layout()
+plt.show()
+
+# Visualización 3: Gráfico de barras (para datos categóricos)
+if 'ciudad' in df.columns:
+    plt.figure(figsize=(12, 6))
+    ciudad_counts = df['ciudad'].value_counts()
+    plt.bar(ciudad_counts.index, ciudad_counts.values, color=['#FF9999', '#66B2FF', '#99FF99'])
+    plt.title('🏙️ Distribución por Ciudad', fontsize=16)
+    plt.xlabel('Ciudad', fontsize=12)
+    plt.ylabel('Frecuencia', fontsize=12)
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+else:
+    print("\nℹ️ No hay columnas categóricas para visualizar")
+
+print("\n✅ Visualizaciones completadas exitosamente en Google Colab!")</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="activity-challenges">
+                                <h4>🏆 Desafíos Adicionales</h4>
+                                <div class="challenges-grid">
+                                    <div class="challenge-card">
+                                        <h5>Desafío 1: Detectar Outliers</h5>
+                                        <p>Identifica valores atípicos en el dataset y decide cómo tratarlos.</p>
+                                    </div>
+                                    <div class="challenge-card">
+                                        <h5>Desafío 2: Correlaciones</h5>
+                                        <p>Calcula la matriz de correlación y encuentra relaciones entre variables.</p>
+                                    </div>
+                                    <div class="challenge-card">
+                                        <h5>Desafío 3: Segmentación</h5>
+                                        <p>Agrupa los datos por categorías y analiza patrones por grupo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sección: Evaluación -->
+                    <section id="evaluacion" class="content-section">
+                        <div class="section-header">
+                            <h2>Evaluación de la Semana</h2>
+                        </div>
+
+                        <div class="evaluation-container">
+                            <div class="quiz-section">
+                                <h3>📝 Cuestionario de Autoevaluación</h3>
+                                <p>Responde las siguientes preguntas para verificar tu comprensión de los temas vistos.</p>
+
+                                <div class="quiz-container">
+                                    <div class="question">
+                                        <h4>1. ¿Cuál es la diferencia principal entre datos e información?</h4>
+                                        <div class="options">
+                                            <label class="option">
+                                                <input type="radio" name="q1" value="a">
+                                                <span>No hay diferencia, son lo mismo</span>
+                                            </label>
+                                            <label class="option">
+                                                <input type="radio" name="q1" value="b">
+                                                <span>Los datos son brutos y la información es datos organizados con contexto</span>
+                                            </label>
+                                            <label class="option">
+                                                <input type="radio" name="q1" value="c">
+                                                <span>La información es más compleja que los datos</span>
+                                            </label>
+                                        </div>
+                                        <div class="feedback" style="display: none;">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>¡Correcto! Los datos son hechos brutos mientras que la información tiene contexto y significado.</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="question">
+                                        <h4>2. ¿Qué tipo de problema es mejor para predecir si un email es spam?</h4>
+                                        <div class="options">
+                                            <label class="option">
+                                                <input type="radio" name="q2" value="a">
+                                                <span>Regresión</span>
+                                            </label>
+                                            <label class="option">
+                                                <input type="radio" name="q2" value="b">
+                                                <span>Clasificación</span>
+                                            </label>
+                                            <label class="option">
+                                                <input type="radio" name="q2" value="c">
+                                                <span>Clustering</span>
+                                            </label>
+                                        </div>
+                                        <div class="feedback" style="display: none;">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>¡Correcto! Es un problema de clasificación porque queremos asignar una categoría (spam/no spam).</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="question">
+                                        <h4>3. ¿Cuál es una aplicación real de la minería de datos en salud?</h4>
+                                        <div class="options">
+                                            <label class="option">
+                                                <input type="radio" name="q3" value="a">
+                                                <span>Diagnóstico médico asistido por IA</span>
+                                            </label>
+                                            <label class="option">
+                                                <input type="radio" name="q3" value="b">
+                                                <span>Gestión de citas médicas</span>
+                                            </label>
+                                            <label class="option">
+                                                <input type="radio" name="q3" value="c">
+                                                <span>Facturación de servicios médicos</span>
+                                            </label>
+                                        </div>
+                                        <div class="feedback" style="display: none;">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>¡Correcto! El diagnóstico médico asistido es una aplicación importante de minería de datos.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary" onclick="checkQuiz()">
+                                    <i class="fas fa-check"></i> Verificar Respuestas
+                                </button>
+                            </div>
+
+                            <div class="practical-evaluation">
+                                <h3>💻 Entrega Práctica</h3>
+                                <div class="submission-requirements">
+                                    <h4>Requisitos de Entrega:</h4>
+                                    <ul>
+                                        <li>Notebook de Google Colab con el análisis completo</li>
+                                        <li>Código limpio y comentado</li>
+                                        <li>Al menos 3 visualizaciones diferentes</li>
+                                        <li>Pequeño reporte explicando los hallazgos</li>
+                                        <li>Reflexión sobre el proceso de minería de datos</li>
+                                        <li>Enlace al notebook de Google Colab (compartido)</li>
+                                    </ul>
+                                </div>
+
+                                <div class="submission-form">
+                                    <h4>Formulario de Entrega:</h4>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="student-name">Nombre Completo:</label>
+                                            <input type="text" id="student-name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="colab-link">Enlace a Google Colab (requerido):</label>
+                                            <input type="url" id="colab-link" placeholder="https://colab.research.google.com/drive/..." required>
+                                            <small>Comparte tu notebook: File → Share → "Anyone with the link"</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="github-link">Enlace a GitHub (opcional):</label>
+                                            <input type="url" id="github-link" placeholder="https://github.com/tu-usuario/repo">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="comments">Comentarios adicionales:</label>
+                                            <textarea id="comments" rows="4" placeholder="Describe cualquier dificultad o hallazgo interesante con Google Colab..."></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">
+                                            <i class="fas fa-upload"></i> Enviar Actividad
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Panel Derecho -->
+                <aside class="content-sidebar right">
+                    <div class="sidebar-content">
+                        <div class="progress-tracker">
+                            <h3>Progreso de la Semana</h3>
+                            <div class="progress-items">
+                                <div class="progress-item completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Introducción</span>
+                                </div>
+                                <div class="progress-item completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Conceptos Clave</span>
+                                </div>
+                                <div class="progress-item">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Tipos de Problemas</span>
+                                </div>
+                                <div class="progress-item">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Aplicaciones</span>
+                                </div>
+                                <div class="progress-item">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Entorno de Trabajo</span>
+                                </div>
+                                <div class="progress-item">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Actividad Práctica</span>
+                                </div>
+                                <div class="progress-item">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Evaluación</span>
+                                </div>
+                            </div>
+                            <div class="progress-summary">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 28.57%"></div>
+                                </div>
+                                <span>2 de 7 temas completados</span>
+                            </div>
+                        </div>
+
+                        <div class="resources-section">
+                            <h3>Recursos Adicionales</h3>
+                            <div class="resource-list">
+                                <a href="#" class="resource-item">
+                                    <i class="fas fa-book"></i>
+                                    <div class="resource-info">
+                                        <h4>Libro: Introduction to Data Mining</h4>
+                                        <span>Tan, Steinbach & Kumar</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="resource-item">
+                                    <i class="fas fa-video"></i>
+                                    <div class="resource-info">
+                                        <h4>Video: What is Data Mining?</h4>
+                                        <span>Google Tech Talks</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="resource-item">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <div class="resource-info">
+                                        <h4>Artículo: The CRISP-DM Process</h4>
+                                        <span>Metodología estándar</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="resource-item">
+                                    <i class="fas fa-link"></i>
+                                    <div class="resource-info">
+                                        <h4>Kaggle Datasets</h4>
+                                        <span>Datasets para practicar</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="next-week">
+                            <h3>Próxima Semana</h3>
+                            <div class="preview-card">
+                                <h4>Semana 2: Fundamentos de Python</h4>
+                                <p>Repaso de estructuras básicas y NumPy para análisis de datos.</p>
+                                <a href="#" class="btn btn-sm btn-secondary disabled">
+                                    <i class="fas fa-lock"></i> Próximamente
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="week-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="navigation-buttons">
+                    <button class="btn btn-secondary" disabled>
+                        <i class="fas fa-arrow-left"></i> Semana Anterior
+                    </button>
+                    <a href="../index.html" class="btn btn-secondary">
+                        <i class="fas fa-home"></i> Volver al Inicio
+                    </a>
+                    <button class="btn btn-primary" disabled>
+                        Siguiente Semana <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="completion-status">
+                    <span class="status-text">Progreso del curso: 7.14%</span>
+                    <div class="mini-progress">
+                        <div class="mini-progress-fill" style="width: 7.14%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/semana-interactions.js"></script>
+    <script src="../js/week-canvas.js"></script>
+</body>
+</html>

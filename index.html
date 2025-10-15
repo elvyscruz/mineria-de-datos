@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minería de Datos - Curso Universitario</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación Principal -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-database"></i>
+                <span>Minería de Datos</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#contenido" class="nav-link">Contenido</a></li>
+                <li><a href="#recursos" class="nav-link">Recursos</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#evaluacion" class="nav-link">Evaluación</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Minería de Datos</span>
+                    <br>
+                    <span class="subtitle">Descubre el Conocimiento Oculto en tus Datos</span>
+                </h1>
+                <p class="hero-description">
+                    Aprende a extraer información valiosa de grandes volúmenes de datos utilizando Python,
+                    scikit-learn y las herramientas más modernas de análisis de datos.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">14</span>
+                        <span class="stat-label">Semanas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Práctico</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Python</span>
+                        <span class="stat-label">Herramienta Principal</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contenido" class="btn btn-primary">
+                        <i class="fas fa-play"></i>
+                        Comenzar Aprendizaje
+                    </a>
+                    <a href="#objetivos" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Más Información
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="data-visualization">
+                    <canvas id="heroCanvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Objetivos -->
+    <section id="objetivos" class="objectives">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Objetivos del Curso</h2>
+                <p class="section-subtitle">Desarrolla competencias clave en análisis y minería de datos</p>
+            </div>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Objetivo General</h3>
+                    <p>Desarrollar las competencias necesarias para aplicar técnicas y herramientas de minería de datos utilizando Python.</p>
+                </div>
+                <div class="objectives-list">
+                    <h3>Objetivos Específicos</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Comprender fundamentos de minería de datos e IA</li>
+                        <li><i class="fas fa-check"></i> Manejar, limpiar y preparar datos para análisis</li>
+                        <li><i class="fas fa-check"></i> Aplicar métodos de clasificación, regresión y agrupamiento</li>
+                        <li><i class="fas fa-check"></i> Evaluar modelos y visualizar resultados efectivamente</li>
+                        <li><i class="fas fa-check"></i> Desarrollar proyectos con datos reales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contenido Semanal -->
+    <section id="contenido" class="weekly-content">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contenido del Curso</h2>
+                <p class="section-subtitle">14 semanas de aprendizaje progresivo</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Semana 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>1</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Introducción a la Minería de Datos</h3>
+                        <p>Conceptos clave, tipos de problemas y aplicaciones prácticas</p>
+                        <a href="semanas/semana1.html" class="btn btn-sm">
+                            <i class="fas fa-arrow-right"></i> Ver Contenido
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Semana 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>2</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Fundamentos de Python para Análisis de Datos</h3>
+                        <p>Estructuras básicas, NumPy y operaciones matemáticas</p>
+                        <a href="semanas/semana2.html" class="btn btn-sm disabled">
+                            <i class="fas fa-lock"></i> Próximamente
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Semana 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>3</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Manipulación de Datos con pandas</h3>
+                        <p>Series, DataFrames, importación y limpieza de datos</p>
+                        <a href="semanas/semana3.html" class="btn btn-sm disabled">
+                            <i class="fas fa-lock"></i> Próximamente
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Semana 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>4</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Análisis Exploratorio y Visualización</h3>
+                        <p>Estadísticas descriptivas, matplotlib y seaborn</p>
+                        <a href="semanas/semana4.html" class="btn btn-sm disabled">
+                            <i class="fas fa-lock"></i> Próximamente
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Evaluación Parcial -->
+                <div class="timeline-item evaluation">
+                    <div class="timeline-marker">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Evaluación Parcial #1</h3>
+                        <p>Proyecto práctico y cuestionario teórico - 45 puntos</p>
+                        <span class="badge">Semana 7</span>
+                    </div>
+                </div>
+
+                <!-- Más semanas... -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <span>14</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Evaluación Final</h3>
+                        <p>Defensa de proyecto final y examen teórico - 55 puntos</p>
+                        <a href="semanas/semana14.html" class="btn btn-sm disabled">
+                            <i class="fas fa-lock"></i> Próximamente
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Metodología -->
+    <section id="metodologia" class="methodology">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Metodología de Enseñanza</h2>
+                <p class="section-subtitle">Aprendizaje activo y basado en proyectos</p>
+            </div>
+            <div class="methodology-grid">
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Clases Expositivas</h3>
+                    <p>Breves sesiones teóricas con conceptos fundamentales</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Laboratorios Prácticos</h3>
+                    <p>Ejercicios guiados en Jupyter Notebook</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Proyectos Colaborativos</h3>
+                    <p>Trabajo en equipos con datasets reales</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon">
+                        <i class="fas fa-presentation"></i>
+                    </div>
+                    <h3>Presentaciones</h3>
+                    <p>Discusión de resultados y defensas de proyectos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Minería de Datos</h4>
+                    <p>Curso universitario de análisis y extracción de conocimiento de datos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Herramientas</h4>
+                    <ul>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-flask"></i> Jupyter Notebook</li>
+                        <li><i class="fas fa-chart-bar"></i> scikit-learn</li>
+                        <li><i class="fas fa-database"></i> pandas</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#contenido">Contenido</a></li>
+                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="#evaluacion">Evaluación</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Minería de Datos - Curso Universitario</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/hero-animation.js"></script>
+</body>
+</html>
