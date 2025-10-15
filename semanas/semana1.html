@@ -473,22 +473,58 @@
                         </div>
 
                         <div class="setup-guide">
+                            <div class="colab-intro">
+                                <div class="intro-card">
+                                    <div class="intro-icon">
+                                        <i class="fab fa-google"></i>
+                                    </div>
+                                    <h3>🚀 Bienvenido a Google Colab</h3>
+                                    <p>
+                                        Google Colab es un entorno de desarrollo Python en la nube que no requiere instalación.
+                                        Es perfecto para aprender minería de datos ya que incluye todas las herramientas necesarias.
+                                    </p>
+                                    <div class="benefits-grid">
+                                        <div class="benefit-item">
+                                            <i class="fas fa-check-circle text-success"></i>
+                                            <span>Sin instalación local</span>
+                                        </div>
+                                        <div class="benefit-item">
+                                            <i class="fas fa-microchip text-warning"></i>
+                                            <span>GPU gratuita</span>
+                                        </div>
+                                        <div class="benefit-item">
+                                            <i class="fas fa-users text-info"></i>
+                                            <span>Colaboración en tiempo real</span>
+                                        </div>
+                                        <div class="benefit-item">
+                                            <i class="fas fa-cloud text-primary"></i>
+                                            <span>Acceso desde cualquier dispositivo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="setup-steps">
                                 <div class="step-card">
                                     <div class="step-number">1</div>
                                     <div class="step-content">
-                                        <h4>Instalar Anaconda</h4>
-                                        <p>Anaconda es una distribución gratuita de Python y R que simplifica la gestión de paquetes.</p>
+                                        <h4>🌐 Acceder a Google Colab</h4>
+                                        <p>Abre tu navegador y accede a Google Colab con tu cuenta de Google.</p>
                                         <div class="code-block">
                                             <div class="code-header">
-                                                <span>Paso 1: Descargar Anaconda</span>
+                                                <span>Acceso directo</span>
                                                 <button class="copy-btn" onclick="copyCode(this)">
                                                     <i class="fas fa-copy"></i>
                                                 </button>
                                             </div>
-                                            <pre><code># Visita https://anaconda.com/products/distribution
-# Descarga la versión para tu sistema operativo
-# Sigue el instalador con las opciones por defecto</code></pre>
+                                            <pre><code># 🔗 Enlace directo:
+https://colab.research.google.com
+
+# 📝 Pasos:
+# 1. Abre tu navegador web (Chrome, Firefox, etc.)
+# 2. Visita el enlace de arriba
+# 3. Inicia sesión con tu cuenta de Google
+# 4. ¡Listo! Ya estás en el entorno de trabajo</code></pre>
                                         </div>
                                     </div>
                                 </div>
@@ -496,20 +532,22 @@
                                 <div class="step-card">
                                     <div class="step-number">2</div>
                                     <div class="step-content">
-                                        <h4>Verificar Instalación</h4>
-                                        <p>Comprueba que Anaconda se instaló correctamente.</p>
+                                        <h4>📝 Crear tu Primer Notebook</h4>
+                                        <p>Crea un nuevo notebook para comenzar tu viaje en la minería de datos.</p>
                                         <div class="code-block">
                                             <div class="code-header">
-                                                <span>Verificar en Terminal/CMD</span>
+                                                <span>Crear notebook</span>
                                                 <button class="copy-btn" onclick="copyCode(this)">
                                                     <i class="fas fa-copy"></i>
                                                 </button>
                                             </div>
-                                            <pre><code># Verificar versión de conda
-conda --version
+                                            <pre><code># 🆕 Crear nuevo notebook:
+# 1. En el menú: File → New notebook
+# 2. O presiona Ctrl+Shift+N (Windows/Linux)
+# 3. O Cmd+Shift+N (Mac)
+# 4. Dale un nombre al notebook: File → Rename
 
-# Verificar versión de Python
-python --version</code></pre>
+# ✨ Tu notebook está listo para usar!</code></pre>
                                         </div>
                                     </div>
                                 </div>
@@ -517,26 +555,39 @@ python --version</code></pre>
                                 <div class="step-card">
                                     <div class="step-number">3</div>
                                     <div class="step-content">
-                                        <h4>Acceder a Google Colab</h4>
-                                        <p>Google Colab es el entorno interactivo en la nube que usaremos durante el curso. No requiere instalación local.</p>
+                                        <h4>🧪 Probar el Entorno</h4>
+                                        <p>Ejecuta tu primer código para verificar que todo funciona correctamente.</p>
                                         <div class="code-block">
                                             <div class="code-header">
-                                                <span>Acceder a Google Colab</span>
+                                                <span>Código de prueba</span>
                                                 <button class="copy-btn" onclick="copyCode(this)">
                                                     <i class="fas fa-copy"></i>
                                                 </button>
                                             </div>
-                                            <pre><code># 1. Abre tu navegador web
-# 2. Visita: https://colab.research.google.com
-# 3. Inicia sesión con tu cuenta de Google
-# 4. Crea un nuevo notebook: File → New notebook
+                                            <pre><code># 🎉 Tu primer código en Google Colab
+print("¡Hola Minería de Datos!")
 
-# ✅ Ventajas de Google Colab:
-# - No requiere instalación
-# - Acceso a GPU gratuita
-# - Entorno preconfigurado
-# - Colaboración en tiempo real
-# - Compatible con GitHub</code></pre>
+# 📊 Verificar versión de Python
+import sys
+print(f"Versión de Python: {sys.version}")
+
+# 📦 Importar librerías principales (ya instaladas)
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+print("✅ Librerías importadas exitosamente!")
+print(f"🐼 pandas versión: {pd.__version__}")
+print(f"🔢 NumPy versión: {np.__version__}")
+
+# 🎨 Configurar visualizaciones para Colab
+%matplotlib inline
+plt.style.use('seaborn-v0_8')
+sns.set_palette("husl")
+
+print("🎨 Entorno configurado para visualizaciones!")
+print("🚀 ¡Todo listo para empezar a trabajar!")</code></pre>
                                         </div>
                                     </div>
                                 </div>
@@ -544,80 +595,80 @@ python --version</code></pre>
                                 <div class="step-card">
                                     <div class="step-number">4</div>
                                     <div class="step-content">
-                                        <h4>Crear Primer Notebook en Colab</h4>
-                                        <p>Crea tu primer notebook en Google Colab para probar que todo funciona correctamente.</p>
+                                        <h4>⚙️ Explorar Funciones de Colab</h4>
+                                        <p>Descubre las características avanzadas que hacen Google Colab especial.</p>
                                         <div class="code-block">
                                             <div class="code-header">
-                                                <span>Primer Notebook en Google Colab</span>
+                                                <span>Funciones avanzadas</span>
                                                 <button class="copy-btn" onclick="copyCode(this)">
                                                     <i class="fas fa-copy"></i>
                                                 </button>
                                             </div>
-                                            <pre><code># Importar librerías básicas (ya preinstaladas en Colab)
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+                                            <pre><code># 🎯 Características especiales de Google Colab:
 
-# Configuración específica para Google Colab
-%matplotlib inline
-plt.style.use('seaborn-v0_8')
-sns.set_palette("husl")
+# 💾 Guardar en Google Drive automáticamente
+# Edit → Notebook settings → Google Drive
 
-# Crear datos de ejemplo
-data = {
-    'nombre': ['Ana', 'Juan', 'María', 'Carlos'],
-    'edad': [25, 30, 28, 35],
-    'ciudad': ['Madrid', 'Barcelona', 'Madrid', 'Valencia'],
-    'puntuacion': [85, 92, 78, 88]
-}
+# 🚀 Cambiar tipo de runtime (GPU/TPU)
+# Runtime → Change runtime type → Hardware accelerator
 
-# Crear DataFrame
-df = pd.DataFrame(data)
-print("🎉 ¡Primer DataFrame creado exitosamente en Google Colab!")
-print("\n📊 Datos del DataFrame:")
-print(df)
+# 📋 Ver comandos de teclado
+# Tools → Keyboard shortcuts
 
-# Estadísticas básicas
-print(f"\n📈 Estadísticas descriptivas:")
-print(df.describe())
+# 🔗 Compartir notebook
+# File → Share → "Anyone with the link"
 
-# Verificar información del dataset
-print(f"\nℹ️ Información del dataset:")
-print(df.info())</code></pre>
+# 📥 Montar Google Drive (para archivos)
+from google.colab import drive
+# drive.mount('/content/drive')
+
+# 💡 Tip: Usa Shift+Enter para ejecutar celdas rápidamente</code></pre>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="installation-checklist">
-                                <h4>✅ Lista de Verificación para Google Colab</h4>
+                                <h4>✅ Lista de Verificación - Google Colab Listo</h4>
                                 <div class="checklist">
                                     <label class="checklist-item">
                                         <input type="checkbox" id="colab-access">
                                         <span class="checkmark"></span>
-                                        Acceso a Google Colab funcionando
+                                        Accedí a Google Colab con mi cuenta
                                     </label>
                                     <label class="checklist-item">
-                                        <input type="checkbox" id="colab-notebook">
+                                        <input type="checkbox" id="notebook-created">
                                         <span class="checkmark"></span>
-                                        Nuevo notebook creado en Colab
+                                        Creé mi primer notebook
                                     </label>
                                     <label class="checklist-item">
-                                        <input type="checkbox" id="libraries-installed">
+                                        <input type="checkbox" id="test-code">
                                         <span class="checkmark"></span>
-                                        Librerías básicas importadas sin errores
+                                        Ejecuté el código de prueba sin errores
                                     </label>
                                     <label class="checklist-item">
-                                        <input type="checkbox" id="first-notebook">
+                                        <input type="checkbox" id="libraries-working">
                                         <span class="checkmark"></span>
-                                        Primer código ejecutado exitosamente
+                                        Librerías pandas y NumPy funcionan
                                     </label>
                                     <label class="checklist-item">
-                                        <input type="checkbox" id="colab-features">
+                                        <input type="checkbox" id="features-explored">
                                         <span class="checkmark"></span>
-                                        Funciones de Colab exploradas (GPU, runtime)
+                                        Exploré el menú y funciones básicas
                                     </label>
+                                    <label class="checklist-item">
+                                        <input type="checkbox" id="ready-course">
+                                        <span class="checkmark"></span>
+                                        ¡Estoy listo para empezar el curso!
+                                    </label>
+                                </div>
+
+                                <div class="success-message">
+                                    <i class="fas fa-trophy"></i>
+                                    <div>
+                                        <h5>🎉 ¡Felicidades!</h5>
+                                        <p>Ya tienes tu entorno de trabajo completamente configurado para aprender minería de datos con Google Colab.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

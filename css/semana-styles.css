@@ -153,7 +153,7 @@
 
 /* ===== CONTENIDO PRINCIPAL ===== */
 .week-content {
-    padding: 4rem 0;
+    padding: 4rem 20px;
     background: var(--week-bg);
 }
 
@@ -162,6 +162,8 @@
     grid-template-columns: 250px 1fr 300px;
     gap: 2rem;
     align-items: start;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 /* ===== SIDEBAR ===== */
